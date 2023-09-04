@@ -45,7 +45,13 @@
     }
     body .container-results p{
         font-weight: 400;
+        opacity: 0.5;
         color: var(--color09);
+    }
+    body .container-results .results-circle{
+        background-color: blue;
+        padding: 10%;
+        border-radius: 9999px;
     }
     body .container-points{
         display: flex;
