@@ -8,7 +8,7 @@
     --color05: hsl(252, 100%, 67%);
     --color06: hsl(241, 81%, 54%);
     --color07: hsla(256, 72%, 46%, 1);
-    --color08:  hsla(241, 72%, 46%, 0);
+    --color08: hsla(241, 72%, 46%, 0);
     --color09: hsl(0, 0%, 100%);
     --color10: hsl(221, 100%, 96%);
     --color11: hsl(241, 100%, 89%);
@@ -36,56 +36,159 @@
   
     }
     body .container-results{
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         background: linear-gradient(0deg, hsl(234, 85%, 45%) 0%, hsl(252, 100%, 67%) 100%);
-        width: 85%;
+        width: 100%;
         height: 50vh;
-        border-radius: 25px;
+        border-radius: 100px 0px;
         padding: 1%;
+    }
+    body .container-results p:nth-child(1){
+        font-size: 1.2rem;
     }
     body .container-results p{
         font-weight: 400;
         opacity: 0.5;
         color: var(--color09);
-        padding: 0% 20%;
+        width: 55%;
     }
     body .container-results h3{
-        font-weight: 400;
+        font-size: 1.5rem;
+        font-weight: 700;
         color: var(--color09);
     }
     body .container-results .results-circle{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
-        background: linear-gradient(300deg, hsl(252, 100%, 67%) 0%, hsl(234, 85%, 45%)  100%);
-        width: 35%;
-        height: 40%;
+        background: linear-gradient(1deg, hsla(241, 72%, 46%, 0) 5%, hsla(256, 72%, 46%, 1) 120%);
+        padding: 4%;
+        width: 200px;
+        height: 200px;
         border-radius: 9999px;
     }
     body .container-results .results-circle span{
         color: var(--color09);
-        font-size: 3rem;
+        font-size: 5rem;
         font-weight: 800;
+        
+    }
+    body .container-results .results-circle p{
+        color: var(--color09);
+        font-size: 1rem;
     }
 
     body .container-points{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
         background-color: var(--color09);
-        padding: 2%;
-        width: 85%;
+        width: 100%;
         height: 50vh;
+
+    }
+    body .container-points .points-title{
+        width: 95%;
+    }
+ 
+    body .container-points ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-bottom: 5%;
+        padding: 0px;
+        
     }
     body .container-points ul li{
+        width: 98%;
+        color: var(--color01);
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        text-decoration: none;
+        padding: 1%;
+        margin: 1%;    
+        border-radius: 15px; 
+    }
+    body .container-points ul li:nth-child(2){
+        color: var(--color02);  
+    }
+    body .container-points ul li:nth-child(3){
+        color: var(--color03);  
+    }
+    body .container-points ul li:nth-child(4){
+        color: var(--color04);  
+    }
+    body .container-points ul li::before{
+       content: "";
+       background-image: url(../img/icon-reaction.svg);
+       background-repeat: no-repeat;
+       width: 20px;
+       height: 20px;
+    }
+    body .container-points ul li:nth-child(2)::before{
+        content: "";
+        background-image: url(../img/icon-memory.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+     }
+     body .container-points ul li:nth-child(3)::before{
+        content: "";
+        background-image: url(../img/icon-verbal.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+     }
+     body .container-points ul li:nth-child(4)::before{
+        content: "";
+        background-image: url(../img/icon-visual.svg);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+     }
+    body .container-points ul li span{
+        font-size: 1.3rem;
+        flex-grow: 1;
+        margin-left: 2%;
+    }
+    body .container-points ul li:nth-child(2){
+            
+    }
+    body .container-points ul li p{
+        font-size: 1.1rem;
+        color: var(--color12);
+        opacity: 0.8;
+    }
+    body .container-points ul li b{
+        font-size: 1.1rem;
+        font-weight: 800;
+        color: #000;
+       }
+    body .container-points .btn-points{
+        font-size: 1.3rem;
+        color: var(--color09);
+        text-decoration: none;
+        text-align: center;
+        font-weight: 800;
+        border-radius: 50px;
+        background-color: var(--color12);
+        padding: 5%;  
+        width: 80%;
+
+    }
+    body .container-points .btn-points:hover{
+        background: linear-gradient(1deg, hsla(241, 72%, 46%, 0) 5%, hsla(256, 72%, 46%, 1) 120%);
 
     }
 
+
+   
     
     
 }
